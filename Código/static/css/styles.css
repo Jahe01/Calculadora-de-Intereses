@@ -1,0 +1,155 @@
+/* Resetear márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Instrucciones centradas */
+.instructions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.instructions h2 {
+    color: #2c3e50;
+}
+
+.instructions p.intro-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.instructions ol {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Sección del formulario */
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* Agrupación de formularios para alineación */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left; /* Alinea el texto a la izquierda dentro de los campos */
+}
+
+/* Estilos para el input numérico sin botones de incremento/decremento */
+.form-group input[type="number"] {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right; /* Alinea el texto numérico a la derecha para mejor visualización de números */
+}
+
+/* Botón */
+button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Botón a 100% del ancho del contenedor */
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Estilos para la tabla */
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#resultTable th, #resultTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#resultTable th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el gráfico */
+#resultChart {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .instructions ol {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .instructions p.intro-text {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
