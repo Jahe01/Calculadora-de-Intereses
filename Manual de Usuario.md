@@ -21,18 +21,20 @@ Bienvenido a la calculadora de intereses, una herramienta web para calcular y vi
 
 ## Ejemplo
 
-- **Valor Inicial**: 10000
-- **Tasa de Interés (%)**: 5
-- **Duración (en periodos)**: 10
+- **Valor Inicial**: 500
+- **Tasa de Interés (%)**: 12
+- **Duración (en periodos)**: 5
 - **Tipo de Periodo**: Años
 - **Tipo de Interés**: Compuesto
+
+![Ejemplo](img/Captura%20de%20pantalla%202024-08-19%20174552.png)
 
 Al hacer clic en "Calcular", verás los valores anuales de la inversión y un gráfico que muestra cómo crece el valor de la inversión con el tiempo.
 
 ## Problemas Comunes
 
-- **El gráfico no se muestra**: Asegúrate de que el archivo `chart.min.js` está correctamente incluido en la carpeta `static/js` y que el servidor Flask está corriendo sin errores.
+- **El gráfico no se muestra**: Asegúrate de que el archivo `chart.umd.js` está correctamente incluido en la carpeta `static/js` y que el servidor Flask está corriendo sin errores.
 - **Datos incorrectos**: Verifica que los datos ingresados son correctos y que la tasa de interés y duración están bien especificados.
 
-Si encuentras algún problema, consulta la sección de **Problemas Comunes** o revisa la configuración de tu entorno.
+
 
