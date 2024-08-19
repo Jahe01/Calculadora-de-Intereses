@@ -14,7 +14,7 @@ Una aplicación web que permite calcular y visualizar el valor futuro de una inv
   [Python 3](https://www.python.org/downloads/) 
 - **Flask**: Un microframework para Python utilizado para construir la aplicación web.
 - **Chart.js**: Biblioteca de JavaScript para crear gráficos interactivos.
-  [Chart.js]([https://www.python.org/downloads/](https://www.chartjs.org/docs/latest/getting-started/installation.html))
+  [Chart.js](https://www.chartjs.org/docs/latest/getting-started/installation.html)
   O poniendo en la consola:
    ```bash
    npm install chart.js
