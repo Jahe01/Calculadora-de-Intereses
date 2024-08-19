@@ -11,8 +11,13 @@ Una aplicación web que permite calcular y visualizar el valor futuro de una inv
 ## Requisitos
 
 - **Python 3.x**: Asegúrate de tener Python 3 instalado.
+  [Python 3](https://www.python.org/downloads/) 
 - **Flask**: Un microframework para Python utilizado para construir la aplicación web.
 - **Chart.js**: Biblioteca de JavaScript para crear gráficos interactivos.
+  [Chart.js]([https://www.python.org/downloads/](https://www.chartjs.org/docs/latest/getting-started/installation.html))
+  O poniendo en la consola:
+   ```bash
+   npm install chart.js
 - **Pandas**: Biblioteca para manipulación y análisis de datos (opcional si necesitas manipular datos).
 
 ## Instalación
@@ -45,7 +50,7 @@ Una aplicación web que permite calcular y visualizar el valor futuro de una inv
 2. Abrir en el Navegador
      - Navega a
    ```
-   http://localhost:5000/
+   http://127.0.0.1:5000/
    ```
    
 4. Ingresar Datos y Calcular
