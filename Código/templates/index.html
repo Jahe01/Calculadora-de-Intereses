@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Intereses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="instructions">
+        <h2>Calculadora de Intereses</h2>
+        <p class="intro-text">Sigue los pasos a continuación para calcular el valor futuro de una inversión:</p>
+        <ol>
+            <li>Ingresa el valor inicial de tu inversión.</li>
+            <li>Introduce la tasa de interés anual.</li>
+            <li>Selecciona la duración de la inversión y el tipo de periodo.</li>
+            <li>Elige si deseas calcular con interés compuesto o simple.</li>
+            <li>Haz clic en "Calcular" para ver los resultados y el gráfico.</li>
+        </ol>
+    </div>
+
+    <div class="form-section">
+        <div class="form-group">
+            <label for="valor_inicial">Valor Inicial:</label>
+            <input type="number" id="valor_inicial" required>
+        </div>
+        <div class="form-group">
+            <label for="tasa_interes">Tasa de Interés (%):</label>
+            <input type="number" id="tasa_interes" required>
+        </div>
+        <div class="form-group">
+            <label for="periodos">Duración (en años):</label>
+            <input type="number" id="periodos" required>
+        </div>
+        <div class="form-group">
+            <label for="tipo_periodo">Tipo de Periodo:</label>
+            <select id="tipo_periodo">
+                <option value="1">Años</option>
+                <option value="4">Trimestres</option>
+                <option value="2">Semestres</option>
+                <option value="12">Meses</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tipo_interes">Tipo de Interés:</label>
+            <select id="tipo_interes">
+                <option value="compuesto">Compuesto</option>
+                <option value="simple">Simple</option>
+            </select>
+        </div>
+        <button onclick="calcular()">Calcular</button>
+    </div>
+
+    <div id="result">
+        <h3>Resultado:</h3>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Periodo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="resultTableBody">
+                <!-- Los resultados se llenarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <canvas id="resultChart"></canvas>
+</div>
+
+<script src="{{ url_for('static', filename='js/chart.umd.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
